@@ -140,8 +140,16 @@ describe('My JS Record Shop', function(){
     customer1.buyRecord(record1, store1);
     customer1.getPaid(100);
     assert.deepEqual(140, customer1.cash);
-
     });
+
+  it('Customer enquries about record', function(){
+    var store1 = new Store("Selectadisc", "Nottingham")
+    var customer1 = new Customer("Andrew", 50)
+    var record1 = new Record("Sign of the times", "Prince", 10);
+    store1.addRecord(record1, 20);
+    assert.deepEqual(50, customer1.cash);
+    });
+
 
 
 })

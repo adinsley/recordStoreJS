@@ -1,4 +1,5 @@
-var _ = require('lodash')
+var _ = require('lodash');
+var prompt = require('prompt');
 
 
 // Create a constructor to create Record objects with artist, title, price
@@ -109,6 +110,19 @@ Customer.prototype = {
     this.cash += payment;
   },
 
+  // enquireAbout:function(store){
+  //   prompt.start();
+  //   prompt.get(['recordName']), function (err, results){
+  //     var key = results.recordName;
+  //     if(store.records[key]){
+  //       console.log('Record is available');
+  //     }else{
+  //       console.log('Record not available');
+  //     }
+  //  } 
+
+  // }
+    
 
 }
 
